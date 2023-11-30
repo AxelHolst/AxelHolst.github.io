@@ -6,44 +6,51 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
 <body>
+    <button id="languageToggle">Swedish</button>
+
     <header>
         <h1>Axel Barck-Holst</h1>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects" id="navProjects">Projects</a></li>
+                <li><a href="#about" id="navAbout">About</a></li>
+                <li><a href="#contact" id="navContact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="about">
-        <h2>About Me</h2>
-        <img src="assets/images/profile.jpg" alt="A portrait of me" class="profile-image">
-        <p>Welcome to my portfolio website! Here you will find projects I've worked on and my professional background. Feel free to reach out if you have any questions or opportunities to discuss.</p>
+        <h2 id="aboutHeading">About Me</h2>
+        <img src="assets/images/profile2.jpg" alt="A portrait of me" class="profile-image">
+        <p id="aboutText">Hi! My name is Axel and I'm studying my fourth year at the Degree Programme in Media Technology at KTH. Welcome to my portfolio website!</p>
     </section>
 
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2 id="projectsHeading">My Projects</h2>
         <!-- Example Project -->
-        <article class="project">
-            <img src="C:\Users\User\Documents\GitHub\AxelHolst.github.io\assets\images\ProfilePic.jpg" alt="Project Thumbnail" class="project-image">
-            <h3>Project Title</h3>
-            <p>This project was built using HTML, CSS, and JavaScript. It showcases my ability to create responsive web designs.</p>
-        </article>
+        <a href="https://mtgn.nu/login" target="_blank" class="project-link">
+          <article class="project">
+              <img src="assets\images\mtgn23.png" alt="Media Technology Reception Project" class="project-image">
+              <div class="project-description">
+                  <h3>KTH Media Technology Reception Website</h3>
+                  <p>I was the project manager for the development of the Media Technology Reception Website at KTH in 2023. The project involved working with React, Firebase, HTML, Javascript och CSS. We also used the CMS Contentful.</p>
+              </div>
+          </article>
+      </a>
         <!-- Add more projects as needed -->
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:axelbarckholst@gmail.com">axelbarckholst@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/axel-barck-holst-507103202/">LinkedIn</a></p>
+        <h2 id="contactHeading">Contact Me</h2>
+        <p><a href="mailto:axelbarckholst@gmail.com" target="_blank" id="emailLink">axelbarckholst@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/axel-barck-holst-507103202/" target="_blank" id="linkedinLink">LinkedIn</a></p>
     </section>
 
-  <footer>
-    <p>&copy; 2023 Axel Barck-Holst</p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Axel Barck-Holst</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
