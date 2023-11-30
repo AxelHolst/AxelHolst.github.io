@@ -1,11 +1,11 @@
-document.addEventListener('scroll', function() {
+function updateBackground() {
     var scrollTop = document.documentElement.scrollTop;
     var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrollPercentage = scrollTop / scrollHeight;
 
     // Define the start and end colors for your gradient.
-    var startColor = { r: 224, g: 238, b: 255 }; // Light sky blue (e0eeff)
-    var endColor = { r: 150, g: 190, b: 255 };  // Soft cerulean blue (add8e6)
+    var startColor = { r: 224, g: 238, b: 255 }; // Light sky blue
+    var endColor = { r: 150, g: 190, b: 255 };  // Soft cerulean blue 
 
     // Calculate the intermediate color based on scroll position
     var r = Math.round(startColor.r + (endColor.r - startColor.r) * scrollPercentage);
@@ -14,7 +14,13 @@ document.addEventListener('scroll', function() {
 
     // Apply the new gradient to the body background
     document.body.style.background = `linear-gradient(to right, rgb(${r}, ${g}, ${b}), #b0d1ff)`;
-});
+}
+
+// Run the function on initial load
+updateBackground();
+
+// Update the background on scroll
+document.addEventListener('scroll', updateBackground);
 
 
 
