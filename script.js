@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     languageToggle.addEventListener('click', () => {
         isEnglish = !isEnglish;
         updateLanguage(isEnglish ? englishText : swedishText);
-        languageToggle.textContent = isEnglish ? 'Swedish' : 'English';
+        languageToggle.textContent = isEnglish ? 'Swe 🌐' : 'Eng 🌐';
     });
 
     function updateLanguage(texts) {
