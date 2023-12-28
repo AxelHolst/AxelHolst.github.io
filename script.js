@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'MTGNprojectDescription': 'I was the project manager for the development of the Media Technology Reception Website at KTH in 2023. The project involved working with React, Firebase, HTML, Javascript och CSS. We also used the CMS Contentful.',
         'emailLink': 'axelbarckholst@gmail.com',
         'linkedinLink': 'LinkedIn',
-        'contactHeading' : 'Contact me'
+        'contactHeading' : 'Contact me',
+        'DogProjectTitle' : 'Canine Guessrd — A dog guessing game',
+        'DogProjectDescription' : 'This was the final Project in the course “Interaction Programming and the Dynamic Web”. For this project we worked with React, Firebase, API’s, HTML, Javascript and CSS.'
     };
 
     const swedishText = {
@@ -52,7 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'MTGNprojectDescription': 'Jag var projektledare för utvecklingen av webbsidan till mottagningen för medieteknik på KTH 2023. Projektet involverade att jobba med React, Firebase, HTML, Javascript och CSS. Vi använde oss även av CMS:en Contentful.',
         'emailLink': 'axelbarckholst@gmail.com',
         'linkedinLink': 'LinkedIn',
-        'contactHeading' : 'Kontakta mig'
+        'contactHeading' : 'Kontakta mig',
+        'DogProjectTitle' : 'Canine Guessrd — ett hundquiz',
+        'DogProjectDescription' : 'Detta var slutprojektet i kursen “Interaktionsprogrammering och dynamiska webben”. I projektet jobbade vi med React, Firebase, API’s, HTML, Javascript och CSS.'
     };
 
     let isEnglish = true;
